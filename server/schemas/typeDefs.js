@@ -7,10 +7,10 @@ const typeDefs = gql`
     username: String!
     email: String!
     bookCount: Int
-    savedBooks: [] //array of book type
+    savedBooks: [Book] //array of book type
   }
 
-  type book {
+  type Book {
   bookId: //value returned from Google's Book API
   authors: [] array of strings as there will be more than one authors
   description: String
